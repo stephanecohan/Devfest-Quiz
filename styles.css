@@ -1,0 +1,230 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#intro {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-block-start: 32px;
+    margin-block-end: 32px;
+
+}
+
+p {
+    font-size: 0.9rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    /* padding-bottom: 16px; */
+    margin-top: 0px;
+}
+
+label, input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+input {
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: #ff0000;
+    color: white;
+    border: 0px solid rgba(2252, 238, 7, 1);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #d32b2d;
+    color: white;
+    border: 0px solid #d32b2d;
+}
+
+.buttons-group {
+    padding-top: 32px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.svg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur de la page */
+    z-index: 1000; /* Assure que le SVG est au-dessus des autres éléments */
+    background-color: transparent;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+.svg-container svg {
+    display: block; /* Évite l'espace blanc sous le SVG */
+    width: auto; /* Ajuste la largeur du SVG */
+    height: auto; /* Maintient le ratio du SVG */
+}
+
+.page {
+    padding: 0px;
+    height: 100vh; /* 100% de la hauteur de la fenêtre */
+    width: 100vw; /* 100% de la largeur de la fenêtre */
+    background-size: cover; /* Couvrir toute la surface */
+    background-position: center; /* Centrer l'image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    /* transition: background-image 0.5s ease-in-out; */
+}
+
+#start-page {
+    background-image: url('images/bg_start.jpg');
+}
+
+/* 
+#quiz-page {
+    background-image: url('images/paris.jpg');
+}
+*/
+
+#result-page {
+    background-image: url('images/bg_end.jpg');
+}
+
+.container {
+    margin-top: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.form-container {
+    max-width: 380px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 24px;
+    margin: 24px;
+    border-radius: 8px;
+}
+
+.question-container {
+    max-width: 380px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    padding: 24px;
+    margin: 24px;
+    border-radius: 8px;
+}
+
+.result-container {
+    max-width: 380px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 24px;
+    margin: 24px;
+    border-radius: 8px;
+}
+
+.form-container input {
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+}
+
+#timer {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#question-number {
+    color:  rgba(252, 238, 7, 1);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+#question-text {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+#final-time {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#correct-answers {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.toggle-button-group {
+    padding-top: 24px;
+    /* display: flex; */
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toggle-button-group input[type="radio"] {
+    display: none;
+}
+
+.toggle-button {
+    font-size: 1rem;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(2252, 238, 7, 0.3);
+    color: rgb(252, 238, 7);
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.toggle-button-group input[type="radio"]:checked + .toggle-button {
+    background-color: rgba(252, 238, 7, 1);
+    color: black;
+    border: 1px solid rgba(2252, 238, 7, 1);
+}
+
+.toggle-button:hover {
+    background-color: rgba(252, 238, 7, 1);
+    color: black;
+    border: 1px solid rgba(2252, 238, 7, 1);
+}
