@@ -162,7 +162,7 @@ function saveResults(finalTime, correctAnswers) {
     const email = document.getElementById("email").value;
 
     fetch('https://script.google.com/macros/s/AKfycbxTEB6gQX3PIAYtNPt0zuRH46cGpt_JhirIm2Xx2zGqt330nMQjbUJzQmM5chtiumvG/exec', {
-        // mode: 'no-cors', // Test serveur local
+        mode: 'no-cors',
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
