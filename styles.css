@@ -16,7 +16,12 @@ body, html {
     font-weight: 700;
     margin-block-start: 32px;
     margin-block-end: 32px;
+}
 
+#warn {
+    font-size: 0.8rem;
+    margin-block-start: 24px;
+    margin-block-end: 24px;
 }
 
 p {
