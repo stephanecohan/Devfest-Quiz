@@ -20,8 +20,8 @@ body, html {
 
 #warn {
     font-size: 0.7rem;
-    margin-block-start: 32px;
-    margin-block-end: 24px;
+    margin-block-start: 24px;
+    margin-block-end: 16px;
 }
 
 p {
